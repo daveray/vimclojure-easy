@@ -1,4 +1,4 @@
-# VimClojure - Easy
+# VimClojure - Easy Peasy Lemon Squeezy
 This is a sample configuration for [VimClojure](http://www.vim.org/scripts/script.php?script_id=2501) to hopefully make the process of getting and using VimClojure more straightforward. It is basically a complete vim configuration with VimClojure and nothing else installed. It should be a good sanity check for setting everything up.
 
 ## Install
