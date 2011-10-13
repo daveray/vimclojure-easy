@@ -84,3 +84,8 @@ Put your curson on the `(set` on line 2 and hit `\lw`. VimClojure with show the 
 
 Now go read [vimclojure.txt](https://github.com/daveray/vimclojure-easy/blob/master/bundle/vimclojure-2.3.0/doc/clojure.txt)!!!
 
+# Resources
+
+* The [VimClojure google group](https://groups.google.com/group/vimclojure)
+* Official [VimClojure source repository](https://groups.google.com/group/vimclojure)
+* A [more involved VimClojure setup](http://blog.darevay.com/2010/10/how-i-tamed-vimclojure)
