@@ -13,9 +13,12 @@ Now clone this repo into .vim and set it up:
 
     $ cd
     $ git clone https://github.com/daveray/vimclojure-easy.git .vim
-    $ ln -s .vim/vimrc .vimrc
+    $ ln -s .vim/vimrc.vim .vimrc
     $ make -C .vim/lib/vimclojure-nailgun-client
-
+    Building ng client.  To build a Windows binary, type 'make ng.exe'
+    gcc -Wall -pedantic -s -O3  -o ng ngclient/ng.c
+    ld: warning: option -s is obsolete and being ignored
+    
 *Note that if you're on Windows, you might need to adjust the NailgunClient setting in vimrc.vim*
 
 ## First Test - Syntax Highlight and Stuff
@@ -42,6 +45,7 @@ Now we want to get to the serious stuff. We'll need to start a nailgun server to
 
 or, run the server manually with the jar in this install:
 
+    $ cd .vim/lib
     $ java -cp server-2.3.0.jar:/path/to/clojure-x.y.z.jar vimclojure.nailgun.NGServer
     NGServer started on all interfaces, port 2113.
 
@@ -61,8 +65,8 @@ See vimclojure.txt for more info.
 
 Now try editing a file with the nailgun server running:
 
-    $ cd ~/.vim
-    $ vim piglatin.clj
+    $ cd
+    $ vim .vim/piglatin.clj
 
 Hit `\ef` to evaluate the file. VimClojure will open a split window to show the result:
 
@@ -74,5 +78,5 @@ Hit `\ef` to evaluate the file. VimClojure will open a split window to show the 
 
 Put your curson on the `(set` on line 2 and hit `\lw`. VimClojure with show the docs for `set`. 
 
-Now go read vimclojure.txt.
+Now go read [vimclojure.txt](https://github.com/daveray/vimclojure-easy/blob/master/bundle/vimclojure-2.3.0/doc/clojure.txt)!!!
 
