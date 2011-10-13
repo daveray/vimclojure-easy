@@ -1,5 +1,5 @@
 # VimClojure - Easy
-This is a sample configuration for VimClojure to hopefully make the process of getting and using VimClojure more straightforward. It is basically a complete vim configuration with VimClojure and nothing else installed. It should be a good sanity check for setting everything up.
+This is a sample configuration for [VimClojure](http://www.vim.org/scripts/script.php?script_id=2501) to hopefully make the process of getting and using VimClojure more straightforward. It is basically a complete vim configuration with VimClojure and nothing else installed. It should be a good sanity check for setting everything up.
 
 ## Install
 If you have an existing vim configuration, first move it out of the way. You can bring it back in after you feel like VimClojure's working for you.
@@ -12,7 +12,7 @@ If you have an existing vim configuration, first move it out of the way. You can
 Now clone this repo into .vim and set it up:
 
     $ cd
-    $ git clone ... .vim
+    $ git clone https://github.com/daveray/vimclojure-easy.git .vim
     $ ln -s .vim/vimrc .vimrc
     $ make -C .vim/lib/vimclojure-nailgun-client
 
@@ -31,13 +31,13 @@ If syntax highlighting doesn't work, make sure `.vim` is in your home directory 
 
 ## Starting the Nailgun Server
 
-Now we want to get to the serious stuff. We'll need to start a nailgun server to get the most use out of VimClojure. There are (at least) two options. If you're using `leiningen`, install the `lein-nailgun` plugin, create a project, and run the plugin:
+Now we want to get to the serious stuff. We'll need to start a nailgun server to get the most use out of VimClojure. There are (at least) two options. If you're using `leiningen`, install the [lein-nailgun plugin] (https://github.com/ibdknox/lein-nailgun) (this is Chris Granger's fork, updated for 2.3.0), create a project, and run the plugin:
 
     $ lein plugin install org.clojars.ibdknox/lein-nailgun "1.1.1"
     $ lein new nailgun-test
     $ cd nailgun-test
     $ lein nailgun
-    Copying 1 file to /Users/dave/Documents/projects/nailgun-test/lib
+    Copying 1 file to /.../nailgun-test/lib
     NGServer started on 127.0.0.1, port 2113.
 
 or, run the server manually with the jar in this install:
