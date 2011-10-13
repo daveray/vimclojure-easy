@@ -19,11 +19,7 @@ Now clone this repo into ~/.vim and set it up:
     gcc -Wall -pedantic -s -O3  -o ng ngclient/ng.c
     ld: warning: option -s is obsolete and being ignored
     
-Note if you're on Windows users:
-
-* Replace `.vim` with `vimfiles`. The location of "HOME" may vary for you.
-* Replace symlink `.vimrc` with `_vimrc` with contents `runtime vimrc.vim`. Or just move `vimrc.vim` to `_vimrc`.
-* You might need to adjust the NailgunClient setting in vimrc.vim
+*Windows users see Windows Notes section below*
 
 ## First Test - Syntax Highlight and Stuff
 
@@ -80,12 +76,24 @@ Hit `\ef` to evaluate the file. VimClojure will open a split window to show the 
     "ellohay"
     "imclojurevay"
 
-Put your curson on the `(set` on line 2 and hit `\lw`. VimClojure with show the docs for `set`. 
+Put your cursor on the `(set` on line 2 and hit `\lw`. VimClojure with show the docs for `set`. 
 
-Now go read [vimclojure.txt](https://github.com/daveray/vimclojure-easy/blob/master/bundle/vimclojure-2.3.0/doc/clojure.txt)!!!
+# What's Next?
+
+* Go read [vimclojure.txt](https://github.com/daveray/vimclojure-easy/blob/master/bundle/vimclojure-2.3.0/doc/clojure.txt)!!!
+* If you've already got vim configuration, you should be able to basically copy this directory structure over yours. Then move the Pathogen and VimClojure settings from `vimrc.vim` to your `vimrc` file.
+* A more elaborate setup is described [here](http://blog.darevay.com/2010/10/how-i-tamed-vimclojure/)
 
 # Resources
 
 * The [VimClojure google group](https://groups.google.com/group/vimclojure)
 * Official [VimClojure source repository](https://groups.google.com/group/vimclojure)
-* A [more involved VimClojure setup](http://blog.darevay.com/2010/10/how-i-tamed-vimclojure)
+
+# Windows Notes
+
+Note if you're on Windows users:
+
+* Replace `.vim` with `vimfiles`. The location of "HOME" may vary for you.
+* Replace symlink `.vimrc` with `_vimrc` with contents `runtime vimrc.vim`. Or just move `vimrc.vim` to `_vimrc`.
+* You might need to adjust the NailgunClient setting in vimrc.vim
+
