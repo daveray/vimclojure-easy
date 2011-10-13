@@ -9,7 +9,7 @@ If you have an existing vim configuration, first move it out of the way. You can
     $ mv .vimrc .vimrc.bak
     $ mv .gvimrc .gvimrc
 
-Now clone this repo into .vim and set it up:
+Now clone this repo into ~/.vim and set it up:
 
     $ cd
     $ git clone https://github.com/daveray/vimclojure-easy.git .vim
@@ -19,7 +19,11 @@ Now clone this repo into .vim and set it up:
     gcc -Wall -pedantic -s -O3  -o ng ngclient/ng.c
     ld: warning: option -s is obsolete and being ignored
     
-*Note that if you're on Windows, you might need to adjust the NailgunClient setting in vimrc.vim*
+Note if you're on Windows users:
+
+* Replace `.vim` with `vimfiles`. The location of "HOME" may vary for you.
+* Replace symlink `.vimrc` with `_vimrc` with contents `runtime vimrc.vim`. Or just move `vimrc.vim` to `_vimrc`.
+* You might need to adjust the NailgunClient setting in vimrc.vim
 
 ## First Test - Syntax Highlight and Stuff
 
