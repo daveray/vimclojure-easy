@@ -18,7 +18,7 @@ Now clone this repo into ~/.vim and set it up:
     Building ng client.  To build a Windows binary, type 'make ng.exe'
     gcc -Wall -pedantic -s -O3  -o ng ngclient/ng.c
     ld: warning: option -s is obsolete and being ignored
-    
+
 *Windows users see Windows Notes section below*
 
 ## First Test - Syntax Highlight and Stuff
@@ -76,7 +76,7 @@ Hit `\ef` to evaluate the file. VimClojure will open a split window to show the 
     "ellohay"
     "imclojurevay"
 
-Put your cursor on the `(set` on line 2 and hit `\lw`. VimClojure with show the docs for `set`. 
+Put your cursor on the `(set` on line 2 and hit `\lw`. VimClojure with show the docs for `set`.
 
 # What's Next?
 
