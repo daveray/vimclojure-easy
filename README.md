@@ -59,7 +59,7 @@ Now that our nailgun server is running, start up vim again and run the `:Clojure
 * If you're cursor's in the middle of a command, hit `ctrl-enter` to execute the command without having to jump to the end of the line first
 * `,st` gives the last stack trace
 
-See vimclojure.txt for more info.
+See [vimclojure.txt](https://github.com/daveray/vimclojure-easy/blob/master/bundle/vimclojure-2.3.1/doc/clojure.txt) for more info.
 
 ## Third Test - Code
 
@@ -80,7 +80,7 @@ Put your cursor on the `(set` on line 2 and hit `\lw`. VimClojure with show the 
 
 # What's Next?
 
-* Go read [vimclojure.txt](https://github.com/daveray/vimclojure-easy/blob/master/bundle/vimclojure-2.3.0/doc/clojure.txt)!!!
+* Go read [vimclojure.txt](https://github.com/daveray/vimclojure-easy/blob/master/bundle/vimclojure-2.3.1/doc/clojure.txt)!!!
 * If you've already got vim configuration, you should be able to basically copy this directory structure over yours. Then move the Pathogen and VimClojure settings from `vimrc.vim` to your `vimrc` file.
 * A more elaborate setup is described [here](http://blog.darevay.com/2010/10/how-i-tamed-vimclojure/)
 
