@@ -84,6 +84,11 @@ Put your cursor on the `(set` on line 2 and hit `\lw`. VimClojure with show the 
 * If you've already got vim configuration, you should be able to basically copy this directory structure over yours. Then move the Pathogen and VimClojure settings from `vimrc.vim` to your `vimrc` file.
 * A more elaborate setup is described [here](http://blog.darevay.com/2010/10/how-i-tamed-vimclojure/)
 
+# ClojureScript
+VimClojure doesn't have any particular support for ClojureScript, but you can at least enable syntax highlighting and stuff in `.cljs` files by adding this to your `vimrc` file:
+
+    autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
+
 # Resources
 
 * The [VimClojure google group](https://groups.google.com/group/vimclojure)
