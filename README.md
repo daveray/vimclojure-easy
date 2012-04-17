@@ -34,16 +34,28 @@ If syntax highlighting doesn't work, make sure `.vim` is in your home directory 
 
 ## Starting the Nailgun Server
 
-Now we want to get to the serious stuff. We'll need to start a nailgun server to get the most use out of VimClojure. There are (at least) two options. If you're using `leiningen`, install the [lein-nailgun plugin] (https://github.com/ibdknox/lein-nailgun) (this is Chris Granger's fork, updated for 2.3.0), create a project, and run the plugin:
+Now we want to get to the serious stuff. We'll need to start a nailgun server to get the most use out of VimClojure. There are (at least) two options.
 
-    $ lein plugin install org.clojars.ibdknox/lein-nailgun "1.1.1"
+The best option is Daniel Solano Gómez's [lein-tarsier plugin] (https://github.com/sattvik/lein-tarsier). First you'll need to install the plugin:
+
+For Leiningen 1.x:
+
+    $ lein plugin install lein-tarsier 0.9.1
+
+For Leiningen 2.x add this to the plugins vector of your `:user` profile located in `~/.lein/profiles.clj`:
+
+    {:user {:plugins [[lein-tarsier "0.9.1"]]}}
+
+Now you can create a new project and run the plugin:
+
     $ lein new nailgun-test
     $ cd nailgun-test
-    $ lein nailgun
-    Copying 1 file to /.../nailgun-test/lib
-    NGServer started on 127.0.0.1, port 2113.
+    $ lein vimclojure
+    Copying 2 files to /Users/dave/Documents/tmp/nailgun-test/lib
+    Starting VimClojure server on 127.0.0.1, port 2113
+    Happy hacking!
 
-or, run the server manually with the jar in this install:
+Alternatively, if you hate yourself, run the server manually with the jar in this install:
 
     $ cd .vim/lib
     $ java -cp server-2.3.0.jar:/path/to/clojure-x.y.z.jar vimclojure.nailgun.NGServer
