@@ -92,7 +92,7 @@ Put your cursor on the `(set` on line 2 and hit `\lw`. VimClojure with show the 
 
 # What's Next?
 
-* Go read [the vimclojure documentation](https://github.com/daveray/vimclojure-easy/blob/master/bundle/vimclojure-2.3.1/doc/clojure.txt)!!!
+* Go read the vimclojure documentation! (You may find it here: `bundle/vimclojure-x.x.x/doc/clojure.txt`).
 * If you've already got vim configuration, you should be able to basically copy this directory structure over yours. Then move the Pathogen and VimClojure settings from `vimrc.vim` to your `vimrc` file.
 * A more elaborate setup is described [here](http://blog.darevay.com/2010/10/how-i-tamed-vimclojure/)
 
