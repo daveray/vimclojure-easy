@@ -103,7 +103,7 @@ Paredit performs structured editing of Clojure S-expressions. To enable, edit vi
 
 let g:paredit_mode = 1
 
-The paredit documentation is here: `bundle/paredit-x.x.x/doc/paredit.txt`).
+The paredit documentation is here: `bundle/paredit-x.x.x/doc/paredit.txt`.
 
 # ClojureScript
 VimClojure doesn't have any particular support for ClojureScript, but you can at least enable syntax highlighting and stuff in `.cljs` files by adding this to your `vimrc` file:
