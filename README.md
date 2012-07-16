@@ -95,6 +95,15 @@ Put your cursor on the `(set` on line 2 and hit `\lw`. VimClojure with show the 
 * Go read the vimclojure documentation! (You may find it here: `bundle/vimclojure-x.x.x/doc/clojure.txt`).
 * If you've already got vim configuration, you should be able to basically copy this directory structure over yours. Then move the Pathogen and VimClojure settings from `vimrc.vim` to your `vimrc` file.
 * A more elaborate setup is described [here](http://blog.darevay.com/2010/10/how-i-tamed-vimclojure/)
+* Enable paredit.
+
+# Paredit
+
+Paredit performs structured editing of Clojure S-expressions. To enable, edit `vimrc.vim` and set the following:
+
+    let g:paredit_mode = 1
+
+The paredit documentation is here: `bundle/paredit-x.x.x/doc/paredit.txt`.
 
 # ClojureScript
 VimClojure doesn't have any particular support for ClojureScript, but you can at least enable syntax highlighting and stuff in `.cljs` files by adding this to your `vimrc` file:
