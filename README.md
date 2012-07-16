@@ -101,7 +101,7 @@ Put your cursor on the `(set` on line 2 and hit `\lw`. VimClojure with show the 
 
 Paredit performs structured editing of Clojure S-expressions. To enable, edit vimrc.vim and set the following:
 
-let g:paredit_mode = 1
+    let g:paredit_mode = 1
 
 The paredit documentation is here: `bundle/paredit-x.x.x/doc/paredit.txt`.
 
