@@ -1,4 +1,8 @@
+*NOTE!!: The future of Clojuring with Vim is tpope's [foreplay.vim](https://github.com/tpope/vim-foreplay). It's easier to set up than VimClojure making a project like this unnecessary. You can find a tutorial [here](http://clojure-doc.org/articles/tutorials/vim_foreplay.html)*
+
 # VimClojure - Easy Peasy Lemon Squeezy
+*Note: Did you read the note above?*
+
 This is a sample configuration for [VimClojure](http://www.vim.org/scripts/script.php?script_id=2501) to hopefully make the process of getting and using VimClojure more straightforward. It is basically a complete vim configuration with VimClojure and nothing else installed. It should be a good sanity check for setting everything up.
 
 ## Install
