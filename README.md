@@ -1,4 +1,4 @@
-*NOTE!!: The future of Clojuring with Vim is tpope's [foreplay.vim](https://github.com/tpope/vim-foreplay). It's easier to set up than VimClojure making a project like this unnecessary. You can find a tutorial [here](http://clojure-doc.org/articles/tutorials/vim_foreplay.html)*
+*NOTE!!: The future of Clojuring with Vim is tpope's [fireplace.vim](https://github.com/tpope/vim-fireplace). It's easier to set up than VimClojure making a project like this unnecessary. You can find a tutorial [here](http://clojure-doc.org/articles/tutorials/vim_fireplace.html)*
 
 # VimClojure - Easy Peasy Lemon Squeezy
 *Note: Did you read the note above?*
