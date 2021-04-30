@@ -48,7 +48,7 @@ For Leiningen 1.x:
 
 For Leiningen 2.x add this to the plugins vector of your `:user` profile located in `~/.lein/profiles.clj`:
 
-    {:user {:plugins [[lein-tarsier "0.10.0"]]]}}
+    {:user {:plugins [[lein-tarsier "0.10.0"]]}}
 
 Now you can create a new project and run the plugin:
 
